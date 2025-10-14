@@ -10,6 +10,8 @@
 
 int main(){
 
+    srand(time(NULL));
+
     int jogador, computador, pontos_jogador = 0, pontos_computador = 0, i = 0;
     int jogo[5][3] = {{TESOURA, LAGARTO, 2}, {PEDRA, SPOCK, 1}, {PAPEL, LAGARTO, 3}, {SPOCK, PAPEL, 4}, {TESOURA, PEDRA, 5}};
     
@@ -34,4 +36,5 @@ int main(){
     
     printf("%d, %d", pontos_jogador, pontos_computador);
     return 0;
+
 }
